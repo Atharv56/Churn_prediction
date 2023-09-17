@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pickle5 as pickle
+import pickle
 import os
 
 model_file_path = os.path.abspath('churn_model.pkl')

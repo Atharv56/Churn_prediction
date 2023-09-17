@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 import os
+from sklearn.ensemble import RandomForestClassifier
 
 model_file_path = os.path.abspath('churn_model.pkl')
 

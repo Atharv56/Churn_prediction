@@ -1,9 +1,11 @@
 import streamlit as st
 import pandas as pd
-import pickle
+import pickle5 as pickle
+import os
 
-# Load the saved model
-with open('churn_model.pkl', 'rb') as file:
+model_file_path = os.path.abspath('churn_model.pkl')
+
+with open(model_file_path, 'rb') as file:
     model = pickle.load(file)
 
 st.title('Churn Prediction Web App')
